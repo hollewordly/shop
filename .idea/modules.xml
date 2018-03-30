@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager/manager.iml" filepath="$PROJECT_DIR$/manager/manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager/manager-dao/manager-dao.iml" filepath="$PROJECT_DIR$/manager/manager-dao/manager-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager/manager-interface/manager-interface.iml" filepath="$PROJECT_DIR$/manager/manager-interface/manager-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager/manager-pojo/manager-pojo.iml" filepath="$PROJECT_DIR$/manager/manager-pojo/manager-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager/manager-service/manager-service.iml" filepath="$PROJECT_DIR$/manager/manager-service/manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager/manager-web/manager-web.iml" filepath="$PROJECT_DIR$/manager/manager-web/manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssparent/portal/portal.iml" filepath="$PROJECT_DIR$/ssparent/portal/portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/search/search.iml" filepath="$PROJECT_DIR$/search/search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/search/search-dao/search-dao.iml" filepath="$PROJECT_DIR$/search/search-dao/search-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/search/search-interface/search-interface.iml" filepath="$PROJECT_DIR$/search/search-interface/search-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/search/search-pojo/search-pojo.iml" filepath="$PROJECT_DIR$/search/search-pojo/search-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/search/search-service/search-service.iml" filepath="$PROJECT_DIR$/search/search-service/search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/search/search-web/search-web.iml" filepath="$PROJECT_DIR$/search/search-web/search-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssparent/ss-parent.iml" filepath="$PROJECT_DIR$/ssparent/ss-parent.iml" />
+    </modules>
+  </component>
+</project>

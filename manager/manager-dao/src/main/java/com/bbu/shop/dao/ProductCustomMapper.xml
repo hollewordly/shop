@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bbu.shop.dao.ProductCustomMapper" >
+
+  <sql id="Base_Column_List" >
+  /*pro_id as proid, pro_name as proname, pro_price as proprice, pro_image as proimage,
+  pro_desc as prodesc, pro_date as prodate, pro_status as prostatus, cat_id as catid*/
+  p.pro_id, p.pro_name, p.pro_price, p.pro_image,
+  p.pro_desc, p.pro_date, p.pro_status, p.cat_id, c.cat_name,
+   CASE p.pro_status
+WHEN 1 THEN "上架"
+WHEN 2 THEN "下架"
+WHEN 3 THEN "删除"
+ELSE "未知" END as statusName
+</sql>
+<sql id="Where_Clause">
+  <where>
+      p.pro_status != 3
+      <if test="query != null and query.title != null and query.title != ''">
+          and p.pro_name like '%${query.title}%'
+      </if>
+  </where>
+</sql>
+  <select id="selectByPage" resultType="com.bbu.shop.pojo.vo.ProductCustom">
+    SELECT <include refid="Base_Column_List"/>
+    FROM product p
+    LEFT JOIN category c ON p.cat_id=c.cat_id
+    <include refid="Where_Clause"/>
+    limit #{page.offset},#{page.limit}
+</select>
+
+<select id="countProduct" resultType="_long">
+    SELECT COUNT(*)
+    FROM product p
+    <include refid="Where_Clause"/>
+  </select>
+</mapper>
